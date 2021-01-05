@@ -4,17 +4,7 @@ import useStyles from './styles';
 import classNames from 'classnames';
 
 
-const Newscard = ({ 
-    articles: {
-    description,
-    publishedAt,
-    source,
-    title,
-    url,
-    urlToImage} , 
-    i,
-    activArticle
-}) => {
+const Newscard = ({ articles: {description,publishedAt,source,title,url,urlToImage} , i,activArticle}) => {
 
     const classes = useStyles()
 
