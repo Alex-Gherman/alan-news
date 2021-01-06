@@ -1,17 +1,16 @@
-if (process.env.NODE_ENV !== 'production') 
-  require('dotenv').config();
 import React,{  useEffect } from 'react';
 import alanBtn from "@alan-ai/alan-sdk-web";
 import NewsCards from './components/NewsCards/NewsCards'
 import useStyles from './style'
 import wordsToNumbers from 'words-to-numbers'
+import dotenv from "dotenv";
+require('dotenv').config();
 
 
 
-
-
-const key = provess.env.AI_KEY
 const App = () =>{
+  const key1 = process.env.DB_PASS
+  console.log(process.env.DB_PASS)
   const [newsArticles,setNewsArticles] = React.useState([])
   const [activArticle,setActivArticle] = React.useState(-1)
   const classes = useStyles()
@@ -19,7 +18,7 @@ const App = () =>{
   useEffect( ()=> {
     alanBtn({
 
-      key:key,
+      key:key1,
       onCommand: ({ command ,articles, number}) => {
         if(command === "newHeadlines"){
           setNewsArticles(articles);
