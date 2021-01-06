@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/Alex-Gherman/alan-news",
+  "homepage": "https://Alex-Gherman.github.io/alan-news",
   "name": "alan-news",
   "version": "0.1.0",
   "private": true,
@@ -27,7 +27,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app" 
   },
   "browserslist": {
     "production": [
