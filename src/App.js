@@ -1,14 +1,16 @@
+if (process.env.NODE_ENV !== 'production') 
+  require('dotenv').config();
 import React,{  useEffect } from 'react';
 import alanBtn from "@alan-ai/alan-sdk-web";
 import NewsCards from './components/NewsCards/NewsCards'
 import useStyles from './style'
 import wordsToNumbers from 'words-to-numbers'
-require('dotenv').config()
 
 
 
 
-const key = "6b6df688a6bbeea96069bf7b25ab4e2f2e956eca572e1d8b807a3e2338fdd0dc/stage"
+
+const key = provess.env.AI_KEY
 const App = () =>{
   const [newsArticles,setNewsArticles] = React.useState([])
   const [activArticle,setActivArticle] = React.useState(-1)
