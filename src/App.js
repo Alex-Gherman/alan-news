@@ -9,8 +9,7 @@ import AlanLogo from "./components/img/alanlogo.png";
 // require("dotenv").config({ path: `../src` + "/../.env" });
 
 const App = () => {
-  const dbKey =
-    "6b6df688a6bbeea96069bf7b25ab4e2f2e956eca572e1d8b807a3e2338fdd0dc/stage";
+  const dbKey = "put the Alan key";
   const [newsArticles, setNewsArticles] = React.useState([]);
   const [activArticle, setActivArticle] = React.useState(-1);
   const classes = useStyles();
